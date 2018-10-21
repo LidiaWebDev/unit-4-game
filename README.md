@@ -1,2 +1,2 @@
 # unit-4-game
-nteractive game supported with jQuery 
+Interactive game supported with jQuery 
