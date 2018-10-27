@@ -27,7 +27,7 @@ $(document).ready(function() {
   }
 
   function win() {
-    alert("Congrats! You won!");
+    alert("You won!");
     wins++;
     $("#wins").text(wins);
     reset();
@@ -47,12 +47,12 @@ $(document).ready(function() {
 
     if (totalScore == random) {
       win();
-    } else if (toalScore > random) {
+    } else if (totalScore > random) {
       lose();
     }
   });
   $(".blueCrystal").on("click", function() {
-    totalScore = totalScorel + blueNum;
+    totalScore = totalScore + blueNum;
     console.log("updateTotal= " + totalScore);
     $("#totalScore").text(totalScore);
 
