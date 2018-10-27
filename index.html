@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+
+    <title>CrystalsCollectorGame </title>
+</head>
+<header>
+    <p>
+        <h1>
+            <font size="7">CrystalsCollector!</font>
+        </h1>
+    </p>
+
+</header>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="row" style="color:black; background-color: blanchedalmond;">
+
+            <div class="col-sm-12">
+                <br>
+
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <p>
+                    There are four crystals below. By clicking on the crystal you will
+                    add a specific amount of points to your total score.
+                </p>
+                <p>
+                    You win the game by matching your total score to random number,you lose the game
+                    if your total score goes above the random number.
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you clock on it.
+                </p>
+                <p>
+                    Each time when the game starts, the game will change the values of each crystal.
+                </p>
+                <br>
+
+
+            </div>
+        </div>
+
+        <div class="row" style="color:black">
+
+
+            <div class="col-sm-4" style="background-color: blanchedalmond"></div>
+            <div class="col-sm-4" style="background-color: salmon">
+                <br>
+
+                <p><big style="font-size:72px;"><span id="numberToMatch"></span></big></p>
+
+                <br>
+            </div>
+            <div class="col-sm-4" style="background-color: blanchedalmond"></div>
+
+        </div>
+        <div class="row" style="background-color: blanchedalmond">
+
+            <div class="col-sm-3 border"><img src="assets/images/red.png" alt="Red Crystal" class="redCrystal" class="float-center"></div>
+
+            <div class="col-sm-3 border"><img src="assets/images/blue.png" alt="Blue Crystal" class="blueCrystal" class="float-center"></div>
+
+            <div class="col-sm-3 border"><img src="assets/images/yellow.png" alt="Yellow Crystal" class="yellowCrystal"
+                    class="float-center"></div>
+
+            <div class="col-sm-3 border"><img src="assets/images/green.png" alt="Green Crystal" class="greenCrystal"
+                    class="float-center"></div>
+
+
+        </div>
+        <div class="row" style="color:black">
+
+            <div class="col-sm-6 border">
+                <br>
+                <p style="color: teal">Wins:<span id="wins"></span></p>
+                <br>
+            </div>
+            <div class="col-sm-6 border">
+                <br>
+                <p style="color: red">Losses: <span id="losses"></span></p>
+                <br>
+            </div>
+
+        </div>
+
+        <div class="
+                    row" style="color:black">
+
+            <div class="col-sm-12 border">
+                <br>
+                <p><span id="totalScore">Your total score is:</span></p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
